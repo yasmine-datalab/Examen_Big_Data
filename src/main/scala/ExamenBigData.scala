@@ -40,11 +40,11 @@ object ExamenBigData {
 
   def main(args: Array[String]): Unit = {
     //test founction
-    println("TEST FONCTION")
+
     SelectList(List("julien", "Paul", "jean", "rac", "trec", "joel", "ed", "chris", "maurice")).foreach(nom => println(nom+"\t"))
 
     //test method
-    println("TEST METHOD")
+
     liste_double()
   }
 }
