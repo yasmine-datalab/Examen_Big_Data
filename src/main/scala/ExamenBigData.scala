@@ -21,10 +21,10 @@ object ExamenBigData {
 
     val domaine_1 = domaine.map(liste => {
       if(liste.length == 2){
-        List(liste.head.replace("https://www.",""), liste(1))
+        List(liste.head.replace("https://www.","").take(liste.head(liste.length)).replace("/",""), liste(1))
       }
       else {
-        List(liste.head.replace("https://www.","") )
+        List(liste.head.replace("https://www.","").take(liste.head(liste.length)).replace("/","") )
       }
     }).foreach(liste => {
       if(liste.length == 2){
@@ -40,9 +40,11 @@ object ExamenBigData {
 
   def main(args: Array[String]): Unit = {
     //test founction
+    println("TEST FONCTION")
     SelectList(List("julien", "Paul", "jean", "rac", "trec", "joel", "ed", "chris", "maurice")).foreach(nom => println(nom+"\t"))
 
     //test method
+    println("TEST METHOD")
     liste_double()
   }
 }
