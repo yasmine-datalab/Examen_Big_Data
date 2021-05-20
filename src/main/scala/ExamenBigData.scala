@@ -35,17 +35,6 @@ object ExamenBigData {
       }
     })
 
-
-
-
-
-
-
-
-
-
-    return  domaine_1
-    //val domaine_modifie = domaine_1.map(liste => liste(0).take)
   }
 
 
